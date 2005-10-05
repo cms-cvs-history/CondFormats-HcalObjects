@@ -61,7 +61,7 @@ namespace edmtest
     //call tracker code
     //
     std::cout <<" Hcal peds for channel HB eta=15, phi=5, depth=2 "<<std::endl;
-    int channelID = cms::HcalDetId (cms::HcalBarrel, 15, 5, 2).rawId();
+    int channelID = HcalDetId (HcalBarrel, 15, 5, 2).rawId();
     const HcalPedestals* myped=pPeds.product();
     const HcalPedestalWidths* mypedW=pPedWs.product();
     const HcalGains* mygain=pGains.product();
