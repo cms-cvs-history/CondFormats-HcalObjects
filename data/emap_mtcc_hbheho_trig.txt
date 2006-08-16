@@ -1435,12 +1435,12 @@
 ###  NO megatile signals come here but needed for x-talk study
 ###  these are ONLY  for sector 10 of YB+2
 #
-   1725      0     18      t      1     10      6      0     HO     16     53    4
-   1726      0     18      t      1     10      6      1     HO     16     54    4
-   1727      0     18      t      1     10      6      2     HO     16     55    4
-   1728      0     18      b      1     11      6      0     HO     16     56    4
-   1729      0     18      b      1     11      6      1     HO     16     57    4
-   1730      0     18      b      1     11      6      2     HO     16     58    4
+   1725      0     18      t      1     10      6      0     HO    -15     53    4
+   1726      0     18      t      1     10      6      1     HO    -15     54    4
+   1727      0     18      t      1     10      6      2     HO    -15     55    4
+   1728      0     18      b      1     11      6      0     HO    -15     56    4
+   1729      0     18      b      1     11      6      1     HO    -15     57    4
+   1730      0     18      b      1     11      6      2     HO    -15     58    4
 #### 
 ### Known not-connected
 ####
