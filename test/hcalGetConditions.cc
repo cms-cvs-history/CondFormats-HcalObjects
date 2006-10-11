@@ -14,13 +14,14 @@ int main () {
   std::string tag_pedestals = "pedestals_mtcc2_v1";
   unsigned long long run = 1;
 
-  //  std::string dbcon = "oracle://orcon/CMS_COND_HCAL";
-  std::string dbcon = "oracle://cms_orcoff/CMS_COND_HCAL";
-  //  ::setenv ("POOL_CATALOG", "relationalcatalog_oracle://orcon/CMS_COND_GENERAL", 1);
-  ::setenv ("POOL_CATALOG", "relationalcatalog_oracle://cms_orcoff/CMS_COND_GENERAL", 1);
+  std::string dbcon = "oracle://orcon/CMS_COND_HCAL";
+  ::setenv ("POOL_CATALOG", "relationalcatalog_oracle://orcon/CMS_COND_GENERAL", 1);
+  // std::string dbcon = "oracle://cms_orcoff/CMS_COND_HCAL";
+  //::setenv ("POOL_CATALOG", "relationalcatalog_oracle://cms_orcoff/CMS_COND_GENERAL", 1);
+
   ::setenv ("CORAL_AUTH_PATH", "/afs/cern.ch/cms/DB/conddb", 1);
 
-  HcalDbTool db (dbcon, true, true);
+  HcalDbTool db (dbcon, false, true);
 
   HcalPedestals peds;
   if (db.getObject (&peds, tag_pedestals, run)) {
