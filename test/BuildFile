@@ -1,4 +1,4 @@
 <use name=CondFormats/HcalObjects>
 <use name=CondTools/Hcal>
 
-<bin file=hcalGetConditions.cc></bin>	
+#<bin file=hcalGetConditions.cc></bin>	
