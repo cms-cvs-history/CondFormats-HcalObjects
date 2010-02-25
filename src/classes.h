@@ -53,6 +53,12 @@ namespace {
     HcalLutMetadata myLutMetadata;
     std::vector<HcalLutMetadatum> myLutMetadatumVec;
     HcalLutMetadata::NonChannelData myLutNonChannelMetadata;
+
+    HcalDcsValues myDcsValues;
+    std::vector<HcalDcsValue> myDcsValueVec;
+
+    HcalDcsMap myDcsMap;
+    std::vector<HcalDcsMap::Item> myDcsMapVec;
   };
 }
 
